@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+    height:600px;
+    width:400px;
+    margin:auto;
+    display:block;
+}
+</style>
+</head>
+<body onload="startGame()">
+<canvas id="canvas" width="400" height="600">Canvas tag not supported</canvas>
+<script type='text/javascript' >
+  var foods = []; //global variables
+  var bugs = [];
+</script>
+<script src="BugGame.js" type="text/javascript"></script>
+<script src="Bug.js" type="text/javascript"></script>
+<script src="Clickable.js" type="text/javascript"></script>
+<script src="Displayable.js" type="text/javascript"></script>
+<script src="Button.js" type="text/javascript"></script>
+<script src="Displayable.js" type="text/javascript"></script>
+<script src="GameControl.js" type="text/javascript"></script>
+<script src="Food.js" type="text/javascript"></script>
+<script src="InfoBar.js" type="text/javascript"></script>
+
+<br>
+<p id="ptext">Game board!</p>
+<p id="ptext2"></p>
+</body>
+</html>

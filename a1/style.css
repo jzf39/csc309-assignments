@@ -1,0 +1,112 @@
+body {
+    margin:auto;
+    max-width: 800px;
+    min-width: 320px;
+    font-family: "Comic Sans";
+    font-size: 16px;
+    line-height: 170%;
+    color: black;
+    background-color: white;
+}
+
+p{
+    margin: auto;
+   
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    color: black;
+    font-weight: 600;
+    line-height: 130%;
+    
+}
+h1{
+    padding-top:  30px;
+}
+
+h2{
+    margin-top: 130%;
+    
+}
+
+
+/*links*/
+a{
+  padding: 4px 0px;
+    color: skyblue;
+  
+}
+a:hover{
+    background-color:beige;
+    text-decoration: underline;
+    font-weight:bold;
+}
+
+    .Table
+    {
+        display: table;
+    }
+   
+    .Heading
+    {
+        display: table-row;
+        font-weight: bold;
+        text-align: center;
+    }
+    .Row
+    {
+        display: table-row;
+    }
+    .Cell
+    {
+        display: table-cell;
+        text-align: center;
+        padding:25px;
+        
+    }
+   
+ .Cell1
+    {
+        display: table-cell;
+        text-align: center;
+        padding-left:25px;
+        
+    }
+.Cell2
+    {
+        display: table-cell;
+        background-color:antiquewhite;
+        text-align: center;
+        padding-left:25px;
+        
+    }
+    
+b{ 
+  position: fixed;
+  background-color: white;
+  margin-top: -40px;
+  padding: 8px ;
+  width: 800px;
+ height: 30px;
+ 
+}
+
+ul{
+    list-style: circle;
+}
+li{
+  margin-left: 30px;
+}
+
+b li{
+   padding: 5px;
+   margin: auto;
+   display:inline-block;   
+}
+
+
+footer{
+    
+    padding-top: 70px;
+    padding-bottom: -30px;
+}
