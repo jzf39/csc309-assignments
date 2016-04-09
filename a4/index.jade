@@ -1,0 +1,8 @@
+extends layout
+
+block head
+	script(src='/js/map.js')
+	script(async, defer, src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA80cNCJ92xg8Uflb5AmbZIZfMeD-Nx6e8&callback=initMap')
+
+block content
+	#map

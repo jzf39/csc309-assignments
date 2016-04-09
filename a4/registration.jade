@@ -1,0 +1,52 @@
+doctype html
+// Code snippet source from http://www.formget.com/multi-step-form-using-jquery-and-css3
+html
+  head
+    
+    title Registration
+    meta(content='noindex, nofollow', name='robots')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    link(href='css/regis_style.css', rel='stylesheet', type='text/css')
+    script(src='js/regis_traverse.js')
+  body
+    #header-container
+      img#logo(src='img/logo.png')
+    .content
+      .main
+          ul#progressbar
+            li.active Create Account
+            li Personal Details
+            li Business
+          fieldset#first
+            h2.title Create your account
+            p.subtitle Step 1
+            input.text_field(name='email', placeholder='Email', type='text')
+            input.text_field(name='pass', placeholder='Password', type='password')
+            input.text_field(name='cpass', placeholder='Confirm Password', type='password')
+            input.next_btn(name='next', type='button', value='Next')
+          fieldset
+            h2.title Personal Details
+            p.subtitle Step 2
+            input.text_field(name='fname', placeholder='First Name', type='text')
+            input.text_field(name='lname', placeholder='Last Name', type='text')
+            input.text_field(name='cont', placeholder='Contact', type='text')
+            label Gender
+            input.rad(name='gender', type='radio')
+            | Male
+            input.rad(name='gender', type='radio')
+            | Female
+            textarea(name='address', placeholder='Address')
+            input.pre_btn(type='button', value='Previous')
+            input.next_btn(name='next', type='button', value='Next')
+          fieldset
+            h2.title Are you a business owner?
+            p.subtitle Step 3
+            select.options
+              option --Select Option--
+              option Yes
+              option No
+            input.text_field(name='b_name', placeholder='Business name', type='text')
+            input.text_field(name='b_cont', placeholder='Business contact', type='text')
+            input.text_field(name='b_address', placeholder='Business address',type='text')
+            input.pre_btn(name='previous', type='button', value='Previous')
+            input.submit_btn(type='submit', value='Submit')

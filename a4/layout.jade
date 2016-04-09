@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/css/stylesheet.css')
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js')
+		script(src='/js/map.js')
+		meta(name='viewport', content='initial-scale=1.0')
+		meta(charset='utf-8')
+		block head
+
+	body
+		#container
+			#header-container
+				a(href='/'): img(src='/img/logo.png', id='logo')
+			#body-container
+				block content
+

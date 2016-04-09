@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script language="javascript" src="js/map.js"></script>
+
+	<!-- Style for the index ONLY -->
+	<style>
+	* {
+		margin:0px;
+		padding:0px;
+		overflow:hidden
+	}
+	</style>
+
+	<meta name="viewport" content="initial-scale=1.0">
+	<meta charset="utf-8">
+
+</head>
+
+
+<body>
+	<div id="container">
+		<div id="header-container">
+			<a href="/"><img id="logo" src="img/logo.png"/></a>
+			<center>
+				<a href="/business.html">Sample Business Page</a> | 
+				<a href="/login.html">Login Page</a> | 
+				<a href="/registeration.html">Registration Page</a>
+			</center>
+		</div>
+		<div id="body-container">
+			<div id="map">
+			</div>
+			<!--<script>
+			var map;
+			function initMap() {
+				map = new google.maps.Map(document.getElementById('map'), {
+					center: {lat: 43.6628606, lng: -79.3990682},
+					zoom: 15
+				});
+			}
+			</script>-->
+			<script>
+				var map;
+				function initMap() {
+					map = new google.maps.Map(document.getElementById('map'), {
+						center: {lat: -34.397, lng: 150.644},
+						zoom: 8
+					});
+				}
+			</script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA80cNCJ92xg8Uflb5AmbZIZfMeD-Nx6e8&callback=initMap" async defer>
+			</script>
+		</div>
+	</div>
+
+
+<!-- Grab location with: http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation -->
+
+</body>
+
+</html>
